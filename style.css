@@ -20,12 +20,26 @@ p {
 }
 
 GG {
-  text-align: center;
+  text-align: left;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: var(--color-1);
+  white-space: pre-wrap;
+  border: 8px transparent transparent;
+  padding: 8px;
+  margin: 12px;
+  border-radius: 12px;
+  width: 75%;
+  align-self: center;
 }
 
 back_button {
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: var(--color-1);
+  
+}
+
+custom_button {
   text-align: center;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: var(--color-1);
