@@ -12,3 +12,5 @@ const color2 = getComputedStyle(document.documentElement).getPropertyValue(
 stylesheet.setProperty("--color-1", color2);
 stylesheet.setProperty("--color-2", color1);
 });
+
+//yes
