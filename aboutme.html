@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8" />
-<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="style.css" onload="retrieveState()"/>
 <html lang="en">
+	<script src="cacheColours.js"></script>
 	<head>
 		<title>unseeyou - about me</title>
 		<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
@@ -9,10 +10,8 @@
 		<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png" />
 		<link rel="manifest" href="assets/site.webmanifest" />
 	</head>
-	<body>
+	<body onload="retrieveState()">
 		<h1 style="font: 600; font-family: Verdana, Geneva, Tahoma, sans-serif;">ABOUT ME</h1>
-
-		<p></p>
 		<GG>
 👋 Hi, I am unseeyou. 
 👀 I am interested in discord bots, automation and AI 
@@ -31,7 +30,7 @@
 
 		<switch_stuff>
 			<label class="switch" title="switch">
-				<input class="switch__input" type="checkbox" data-theme-toggle placeholder="_" />
+				<input class="switch__input" type="checkbox" data-theme-toggle placeholder="_" onclick="saveState();reloadPage()"/>
 				<span class="switch__slider"></span>
 				<script src="darkmodtoggle.js"></script>
 			</label>
