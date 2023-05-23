@@ -25,7 +25,7 @@ function retrieveState(){
         stylesheet.setProperty("--color-1", c1);
         stylesheet.setProperty("--color-2", c2);
         console.log(c2)
-        if (c2 == '#e5fdff'){
+        if (c2 == '#e0fdff') {
             //clear the local storage since light mode is default so there is no need to save it
             clearCache();
         }
