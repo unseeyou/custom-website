@@ -1,5 +1,4 @@
 function saveState() {
-    console.log('saveState called')
     const color1 = getComputedStyle(document.documentElement).getPropertyValue(
         "--color-1"
         );
@@ -20,15 +19,14 @@ function getState() {
 function retrieveState(){
     const stylesheet = document.documentElement.style;
     cols = getState()
-    console.log(cols)
     if (cols[0]!=null){
-        console.log('c1 is not None')
         c1 = cols[0]
         c2 = cols[1]
         stylesheet.setProperty("--color-1", c1);
         stylesheet.setProperty("--color-2", c2);
+        console.log(c2)
         if (c2 == '#e5fdff'){
-            console.log('clearing local storage')
+            //clear the local storage since light mode is default so there is no need to save it
             clearCache();
         }
     }
