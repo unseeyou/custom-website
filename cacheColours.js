@@ -18,24 +18,20 @@ function getState() {
 
 function retrieveState(){
     const stylesheet = document.documentElement.style;
-    cols = getState()
+    cols = getState();
     if (cols[0]!=null){
-        c1 = cols[0]
-        c2 = cols[1]
+        c1 = cols[0];
+        c2 = cols[1];
         stylesheet.setProperty("--color-1", c1);
         stylesheet.setProperty("--color-2", c2);
-        console.log(c2)
-        if (c2 == '#e0fdff') {
+        if (c2 == '#e0fdff' || c1 != '#001d1f' || c2 != '#e0fdff') {
             //clear the local storage since light mode is default so there is no need to save it
             clearCache();
         }
-    }
-    else {
-        console.log('no data')
     };
-    }
+    };
 
 function clearCache() {
     localStorage.clear();
-}
+};
 
