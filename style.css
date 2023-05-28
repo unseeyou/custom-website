@@ -127,7 +127,7 @@ e {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 switch_stuff {
-  position: absolute;
+  position: fixed;
   bottom: 0px;
 }
 .button {
