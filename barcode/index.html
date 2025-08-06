@@ -1,0 +1,25 @@
+<script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.6/dist/JsBarcode.all.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/interactjs@1.3.3/dist/interact.min.js"></script>
+<link rel="stylesheet" href="style.css">
+<html lang="en"></html>
+<head>
+        <title>unseeyou - barcode generator</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon-16x16.png" />
+        <link rel="manifest" href="../assets/site.webmanifest" />
+</head>
+
+<script src="index.js"></script>
+<div class="bgcontainer">
+        <img src="../assets/bg.jpg" alt="bg" id="bg">
+        <div>
+        <input id="search-input" type="text" placeholder="Enter Value...">
+        <button class="button" onclick="read_input()">Go!</button>
+        <a href="../home.html" title="go back"><button class="button">Back</button></a>
+                <div style="border: 2px solid;width: 95%;height: 95%;" id="container" class="resize-container">
+                        <img id="plateCanvas" class="resize-drag" draggable="true" ondragstart="drag(event)"></img>
+                        
+                </div>
+        </div>
+</div>
